@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="231dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/energy" />
+
+    <TextView
+        android:id="@+id/track_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Track"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_textview" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/name_textview"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/country_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Country"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/track_textview"
+        app:layout_constraintTop_toBottomOf="@+id/track_textview" />
+
+    <TextView
+        android:id="@+id/email_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/country_textview"
+        app:layout_constraintTop_toBottomOf="@+id/country_textview" />
+
+    <TextView
+        android:id="@+id/phone_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/email_textView"
+        app:layout_constraintTop_toBottomOf="@+id/email_textView" />
+
+    <TextView
+        android:id="@+id/slack_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Slack Username"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/phone_textView"
+        app:layout_constraintTop_toBottomOf="@+id/phone_textView" />
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Norbert Lukwayi"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/track_textview_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Associate Android Developer"
+        app:layout_constraintBottom_toBottomOf="@+id/track_textview"
+        app:layout_constraintStart_toEndOf="@+id/track_textview" />
+
+    <TextView
+        android:id="@+id/country_textview_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Uganda"
+        app:layout_constraintBottom_toBottomOf="@+id/country_textview"
+        app:layout_constraintStart_toEndOf="@+id/country_textview" />
+
+    <TextView
+        android:id="@+id/email_textview_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="lukwayi@gmail.com"
+        app:layout_constraintBottom_toBottomOf="@+id/email_textView"
+        app:layout_constraintStart_toEndOf="@+id/email_textView" />
+
+    <TextView
+        android:id="@+id/phone_textview_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="+256785909458"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_textView"
+        app:layout_constraintStart_toEndOf="@+id/phone_textView" />
+
+    <TextView
+        android:id="@+id/slack_textview_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Norbert Lukwayi"
+        app:layout_constraintBottom_toBottomOf="@+id/slack_textview"
+        app:layout_constraintStart_toEndOf="@+id/slack_textview" />
+</android.support.constraint.ConstraintLayout>
